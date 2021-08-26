@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #141414;
+    --cor2: #E50914;
+}
+
+*{
+    /*Resetando o Css*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cor1);
+}
+
+header .container {
+    display: flex;
+    /* Por padrão -> flex-direction: row;*/
+    align-items: center;
+    border: 1px solid rgb(250, 250, 250);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+header .logo {
+    color: var(--cor2);
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
