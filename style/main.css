@@ -26,7 +26,6 @@ header .container {
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: space-between;
-    margin: 5px;
 }
 
 header .logo {
@@ -47,13 +46,15 @@ header nav a:hover {
 
 /*Filme Principal*/
 
-main .filme-principal{
-    font-size: 10px;
-    background: linear-gradient(rgba(0,0, 0, .10), rgba(0,0,0, .80) 100%),url('/src/capa-loki.jpg');
+.filme-principal #logo-capa {
+    width: 50%;
+}
 
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 300px;
+main .filme-principal{
+    font-size: 55%;
+    background: linear-gradient(rgba(0,0, 0, .50), rgba(0,0,0, .30) 100%),url('../src/capa-principal.jpg');
+
+    width: 100%; 
     height: 400px;
     background-size: cover;
 
@@ -64,12 +65,53 @@ main .filme-principal{
     margin: auto;
 }
 
+.filme-principal .describe {
+    margin-top: 3%;
+}
+
+/*Botões*/
+
 .filme-principal .botoes {
-    margin-top: 50px;
+    margin-top: 10%;
     padding: 10px;
 }
 
-.titulo {
-    font-size: 40px;
+.filme-principal .botao {
+    background-color: #141414c7;
+    color: white;
+    border: none;
+    padding: 7px;
+    margin: 2px;
+    border-radius: 3px;
+
+    cursor: pointer;
+    transition: .5s ease all;
 }
 
+.filme-principal .botao:hover {
+    background-color: white;
+    color: #141414;
+}
+
+.filme-principal .botao i {
+    margin-right: 5px;
+}
+
+/*WRAPPER => Envelope => container*/
+
+.container {
+    margin-left: 3%;
+}
+
+.filme-principal .container {
+    width: 60%;
+}
+
+/*Carrosel de filmes*/
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.434);
+}
